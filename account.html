@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2d3a45;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #1a1a1a;
+            padding: 110px;
+            width: 360px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .container h1 {
+            font: size 50px;;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            background-color: #444;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color:gray;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color:grey;
+        }
+
+        .three{
+    width: 60px;
+    height:60px;
+    
+        }
+
+        .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 0%;
+    padding-left: 0%;
+   display:flex;
+   align-items:  flex-start;
+    cursor: pointer;
+  }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <button class="close-btn">&times;</button>
+       <center><img src="https://vectorseek.com/wp-content/uploads/2023/07/Twitter-X-Logo-Vector-01-2.jpg" class="three"/></center>
+        <h1>Create your account</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" maxlength="50" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <div style="display: flex; gap: 10px;">
+                    <select id="month" name="month">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <!-- Add other months -->
+                    </select>
+                    <select id="day" name="day">
+                        <option value="">Day</option>
+                        <!-- Add days 1-31 -->
+                    </select>
+                    <select id="year" name="year">
+                        <option value="">Year</option>
+                        <!-- Add years dynamically -->
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn">Next</button>
+        </form>
+    </div>
+</body>
+</html>
